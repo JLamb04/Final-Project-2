@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .purple { 
-    color: purple; 
+    color: #6415ff; 
 }
 
 .logo__img { 
@@ -28,17 +28,61 @@
 
 .nav__links a { 
     text-decoration: none;
+    color: black; 
 }
 
 .btn { 
     background-color: black; 
     color: white;
+    height: 50px; 
+    width: 50px;
+    border-radius: 50%;
 }
 
 .header__title { 
     font-size: 40px; 
     font-weight: 600; 
     margin-top: 36px;
+    text-align: center;
+    color: #6415ff;
+}
+
+.header__subtitle { 
+  text-align: center;
+    font-size: 30px;
+}
+
+input { 
+    background-color: #fff;
+    border-radius: 20px; 
+    border: 1px solid #0a1f44;
+    color: #0a1f44;
+    display: inline-block; 
+    height: 70px;
+    line-height: 40px;
+    outline: none; 
+    padding: 0 15px;
+    width: 50%; 
+    font-size: 24px; 
+    padding-left: 25px; 
+    transition: border-color .2s cubic-bezier(.645, cubic-bezier(0.645, 0.045, 0.355, 1));
+    text-align: center;
+}
+
+.search { 
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    color: purple;
+}
+
+svg { 
+    width: 40px;
+}
+
+button { 
+    background-color: black; 
+    border: 1px solid; 
+    cursor: pointer;
+    color: white; 
+    margin-left: 16px;
 }
