@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.car__wrapper[data-v-53a4c488] {
+    transform: translateX(0%);
+    transition: all 2s ease-in-out;
+    z-index: 1000;
+    width: 100%;
+}
+
 .purple { 
     color: #6415ff; 
 }
@@ -29,6 +36,8 @@
 .nav__links a { 
     text-decoration: none;
     color: black; 
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .btn { 
@@ -49,11 +58,15 @@
     margin-top: 36px;
     text-align: center;
     color: #6415ff;
+    max-width: 600px; 
+    margin: 0 auto; 
+
 }
 
 .header__subtitle { 
   text-align: center;
     font-size: 30px;
+    font-weight: 600;
 }
 
 input { 
@@ -104,9 +117,30 @@ button {
   box-shadow: 0 8px 16px rgba(100, 21, 255, 0.25);
 }
 
+.header__overlay { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .header__img { 
-    width: 200px;
-    height: 150px;
-    margin-top: 40px;
+    width: 300px;
+    height: 250px;
+    margin-top: 38px;
     margin: auto;
+}
+
+li:nth-child(2) a { 
+    overflow: hidden; 
+}
+
+li:nth-child(2) a::after { 
+  opacity: 1; 
+  transform: translate3d(-100%, 0, 0);  
+}
+
+li:nth-child(2) a:hover::after, 
+li:nth-child(2) a:focus::after { 
+  transform: translate3d(0, 0, 0); 
 }
