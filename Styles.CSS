@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.car__wrapper[data-v-53a4c488] {
+.car-wrapper[data-v-53a4c488] {
     transform: translateX(0%);
     transition: all 2s ease-in-out;
     z-index: 1000;
@@ -227,5 +227,21 @@ button {
 
 .loaderbutton.loading::after {
   opacity: 1;
+}
+
+.car-img { 
+    opacity: 0; 
+    position: absolute; 
+    bottom: 38.2%; 
+    left: 1.1%; 
+    width: 6%; 
+}
+
+.wheel1 { 
+   left: 9.75%; 
+}
+
+.wheel2 { 
+    right: 9%;
 }
 
