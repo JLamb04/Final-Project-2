@@ -5,7 +5,7 @@ const postsContainer = document.getElementById("posts-container");
 submitBtn.addEventListener("click", function () {
   const searchTerm = searchInput.value;
   // IMPORTANT: You need to get your own API key from https://www.omdbapi.com/apikey.aspx
-  const apiKey = " http://www.omdbapi.com/?i=tt3896198&apikey=ad431eff"; 
+  const apiKey = "ad431eff"; 
 
   if (!searchTerm) {
     postsContainer.innerHTML = "<p>Please enter a movie title to search.</p>";
